@@ -16,7 +16,7 @@ gamepad.on("move", function (id, axis, value) {
     axis: axis,
     value: value,
   });
-  client.sendAction("GAMEPAD_MOVE", {
+  client.sendEvent("GAMEPAD_MOVE", {
     id: id,
     axis: axis,
     value: value,
@@ -29,7 +29,7 @@ gamepad.on("up", function (id, num) {
     id: id,
     num: num,
   });
-  client.sendAction("GAMEPAD_UP", {
+  client.sendEvent("GAMEPAD_UP", {
     id: id,
     num: num,
   });
@@ -41,7 +41,7 @@ gamepad.on("down", function (id, num) {
     id: id,
     num: num,
   });
-  client.sendAction("GAMEPAD_DOWN", {
+  client.sendEvent("GAMEPAD_DOWN", {
     id: id,
     num: num,
   });
